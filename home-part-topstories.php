@@ -54,7 +54,7 @@
 					<div class="story">
 			        	<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 			        	<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-			            <?php largo_excerpt( $post, 3, '', 0 ); ?>
+			            <?php largo_excerpt( $post, 3 ); ?>
 			        </div>
 			    <?php elseif ($count == 4) : ?>
 			        <h4 class="subhead"><?php _e('More Headlines', 'largo'); ?></h4>
