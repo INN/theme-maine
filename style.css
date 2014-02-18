@@ -285,6 +285,71 @@ a:hover {
 .navbar .btn-navbar.active {
   background-color: #003900 \9;
 }
+
+/* Who ya kidding? */
+.whoyakidding {
+  margin-bottom: 24px;
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-bottom: 7px solid #ddd;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+.whoyakidding h1.entry-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+}
+.whoyakidding header {
+  margin-bottom: 18px;
+  padding-bottom: 6px;
+  border-bottom: 4px solid #ccc;
+}
+.whoyakidding p.intro {
+  font-style: normal;
+  line-height: 1.3;
+}
+.whoyakidding h4 {
+  margin: 0 0 5px;
+  color: #060;
+  font-size: 18px;
+}
+.whoyakidding .submit {
+  margin-bottom: 24px;
+  padding: 24px 0 0;
+  border-top: 4px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.whoyakidding .desc-collapse {
+  display: none;
+}
+.whoyakidding .desc-collapse.in {
+  display: block;
+  padding-top: 24px;
+}
+.whoyakidding .desc-collapse {
+  cursor: pointer;
+}
+.whoyakididng #nav-below {
+  width: 100%;
+}
+.whoyakidding #nav-below a {
+  display: inline-block;
+  padding: 0 0 0 10px;
+  text-decoration: underline;
+  color: #999;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  float: right;
+}
+.whoyakidding #nav-below a.left {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.whoyakidding #nav-below a:hover {
+  color: #ddd;
+}
+
 @media (max-width: 1049px) {
   .navbar .container {
     width: auto;
@@ -401,5 +466,32 @@ a:hover {
   }
   .global-nav-drop {
   	display: none !important;
+  }
+  .item, .item-body {
+	overflow: hidden;
+	padding: 0px 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .whoyakidding img {
+    clear: both;
+    float: none;
+    display: block;
+    margin: 0 auto 12px;
+  }
+  .whoyakidding h4 {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .whoyakidding #nav-below a {
+    display: block;
+    float: left;
+    clear: both;
+    margin-bottom: 8px;
+    padding-left: 0;
+  }
+  .whoyakidding #nav-below a.left {
+    float: none;
+    margin-bottom: 18px;
   }
 }
