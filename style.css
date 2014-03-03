@@ -305,9 +305,13 @@ a:hover {
   padding-bottom: 6px;
   border-bottom: 4px solid #ccc;
 }
+.whoyakidding .post-social {
+  margin-bottom: 4px;
+}
 .whoyakidding p.intro {
   font-style: normal;
   line-height: 1.3;
+  font-size: 26px;
 }
 .whoyakidding h4 {
   margin: 0 0 5px;

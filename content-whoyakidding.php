@@ -1,5 +1,5 @@
 <header class="archive-background clearfix">
-	<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/whoyakidding_logo.jpg">
+	<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/whoyakidding_logo.jpg">
 </header>
 
 <?php
@@ -30,6 +30,7 @@
 	<header>
  		<h1 class="entry-title" itemprop="headline"><?php the_title(); ?></h1>
  		<h5 class="byline"><?php largo_byline(); ?></h5>
+ 		<?php largo_post_social_links(); ?>
 
  		<meta itemprop="description" content="<?php echo strip_tags(largo_excerpt( $post, 5, false, '', false ) ); ?>" />
  		<meta itemprop="datePublished" content="<?php echo get_the_date( 'c' ); ?>" />
@@ -42,7 +43,7 @@
 	<!-- .entry-content -->
 
 	<div class="submit">
-		<a href="/tips/"><img class="left" alt="..." src="/files/2014/02/WhoYaKidding_the_quote_small.png" /></a>
+		<a href="/tips/"><img class="left" alt="..." src="<?php echo get_stylesheet_directory_uri(); ?>/img/WhoYaKidding_the_quote_small.png" /></a>
 		<p><em>Have you got a quote or statement you think would be appropriate for this column?<br />
 		<a href="/tips/">Send it in</a> &ndash; and let us know whether we should use
 your name if we publish it.</em></p>
