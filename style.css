@@ -565,4 +565,7 @@ aside.party-time .sunlight-link {
     float: none;
     margin-bottom: 18px;
   }
+  .term-political-party-time p.intro {
+    padding: 0;
+  }
 }
