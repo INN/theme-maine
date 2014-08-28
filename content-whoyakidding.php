@@ -51,7 +51,7 @@ your name if we publish it.</em></p>
 
 	<footer class="post-meta bottom-meta">
 		<nav id="nav-below" class="post-nav clearfix">
-			<a class="left desc-collapse" data-toggle="collapse" data-target=".desc-collapse" title="">about this column</a>
+			<a class="left collapse-trigger" data-toggle="collapse" data-target=".desc-collapse" title="">about this column</a>
 		<?php
 			$thisindex = array_search( $post->ID, $ids );
 

@@ -324,17 +324,17 @@ a:hover {
   border-top: 4px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
-.whoyakidding .desc-collapse {
+.desc-collapse {
   display: none;
 }
-.whoyakidding .desc-collapse.in {
+.desc-collapse.in {
   display: block;
   padding-top: 24px;
 }
-.whoyakidding .desc-collapse {
+.collapse-trigger {
   cursor: pointer;
 }
-.whoyakididng #nav-below {
+.whoyakidding #nav-below {
   width: 100%;
 }
 .whoyakidding #nav-below a {
@@ -352,6 +352,73 @@ a:hover {
 }
 .whoyakidding #nav-below a:hover {
   color: #ddd;
+}
+
+/* Political Party Time */
+/* getting all this to work together and look nice with tabular data in a list format */
+.ppt-table{
+  height: 800px;
+  overflow-y: scroll;
+  border: 1px solid #ddd;
+}
+#ppt-logo {
+  padding-bottom: 8px;
+}
+aside.party-time table {
+  margin: 0;
+  border: 0;
+}
+aside.party-time tr {
+  border-bottom: 1px solid #ddd;
+}
+aside.party-time td {
+  display: block;
+  border: 0;
+  padding: 0;
+  margin: 8px;
+}
+aside.party-time td.ppt-event-details,
+aside.party-time td.ppt-event-beneficiaries,
+aside.party-time td.ppt-event-coverage {
+  padding-left: 16px;
+}
+aside.party-time td p {
+  margin-bottom: 0;
+}
+aside.party-time span.label-venues {
+  display: none;
+  /* it's for screen-readers */
+}
+aside.party-time span.label-beneficiaries,
+aside.party-time span.label-coverage{
+  font-size: 75%;
+  text-transform: uppercase;
+}
+.ppt-event-beneficiaries li,
+.ppt-event-coverage li {
+  list-style: none;
+}
+aside.party-time .sunlight-link {
+  font-size: 10px;
+  text-align: right;
+}
+/* landing page */
+.term-political-party-time .desc-collapse.in {
+  padding-top: 0;
+}
+.term-political-party-time p.intro {
+  font-size: 18px;
+  text-align: center;
+  padding: 0 80px;
+}
+.term-political-party-time .collapse-trigger {
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+
+.impaq-me-widget {
+  margin-bottom: 18px;
 }
 
 @media (max-width: 1049px) {
