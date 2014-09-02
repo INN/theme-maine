@@ -13,7 +13,7 @@
 				$queried_object = get_queried_object();
 				$term_id = intval( $queried_object->term_id );
 				$tax = $queried_object->taxonomy;
-				$posts_term = of_get_option( 'posts_term_plural', 'Stories' );
+				$posts_term = 'Posts';
 				printf(__('Recent %1$s<a class="rss-link" href="%2$s"><i class="icon-rss"></i></a>', 'largo'), $posts_term, get_term_feed_link( $term_id, $tax ) );
 			?>
 		</h3>
