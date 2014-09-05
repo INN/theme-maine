@@ -41,7 +41,7 @@
 	    ?>
 	</div>
 </div><!--#content-->
-<div class="sidebar span4">
+<aside id="sidebar" class="span4">
 <?php dynamic_sidebar( 'political-party-time' ); ?>
-</div>
+</aside>
 <?php get_footer(); ?>

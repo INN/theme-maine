@@ -95,8 +95,17 @@ a:hover {
   background-color: #4C5A47;
   border-left: 1px solid #95AC86;
 }
+.global-nav ul li {
+  margin: 9px 10px 0 0;
+}
 .global-nav ul a:hover {
   color: #809A76;
+}
+.global-nav .nav-right ul#header-social li a {
+  padding: 5px 3px;
+}
+.global-nav .nav-right .donate-btn {
+  margin-left: 0;
 }
 .icon-heart,
 #comments,
@@ -106,19 +115,12 @@ a:hover {
 .stories h2.entry-title {
   font-size: 25px;
 }
+.btn {
+  text-shadow: none;
+}
 .btn-primary {
   background-color: #900;
-  background-image: -moz-linear-gradient(top, #F00, #900);
-  background-image: -ms-linear-gradient(top, #F00, #900);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#F00), to(#900));
-  background-image: -webkit-linear-gradient(top, #F00, #900);
-  background-image: -o-linear-gradient(top, #F00, #900);
-  background-image: linear-gradient(top, #F00, #900);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F00', endColorstr='#900', GradientType=0);
   border-color: #900;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #900;
 }
 .btn-primary:hover,
 .btn-primary:active,
@@ -126,11 +128,10 @@ a:hover {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   background-color: #900);
-  *background-color: #F00;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #900 \9;
+  background-color: #900;
 }
 .btn:hover,
 .btn:active,
@@ -140,11 +141,10 @@ a:hover {
   color: #FFF;
   text-decoration: none;
   background-color: #900;
-  *background-color: #F00;
 }
 .btn:active,
 .btn.active {
-  background-color: #3B7E37 \9;
+  background-color: #3B7E37;
 }
 .tags ul li {
   background-color: #3B7E37;
@@ -353,6 +353,9 @@ a:hover {
 .whoyakidding #nav-below a:hover {
   color: #ddd;
 }
+.widget_sp_image img.aligncenter {
+  margin: 0 auto;
+}
 
 /* Political Party Time */
 /* getting all this to work together and look nice with tabular data in a list format */
@@ -362,7 +365,7 @@ a:hover {
   border: 1px solid #ddd;
 }
 #ppt-logo {
-  padding-bottom: 8px;
+  padding-bottom: 12px;
 }
 aside.party-time table {
   margin: 0;
@@ -416,11 +419,35 @@ aside.party-time .sunlight-link {
   width: 100%;
   display: block;
 }
-
+.ppt-submit p {
+  margin-bottom: 8px;
+}
+.ppt-submit .btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #d84528;
+  color: #fff;
+}
+.ppt-submit .btn:hover {
+  opacity: 0.9;
+}
+.ppt-homepage-widget img {
+  margin-bottom: 12px;
+}
+.ppt-homepage-widget p {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
 .impaq-me-widget {
   margin-bottom: 18px;
 }
 
+@media (max-width: 1200px) {
+  #header-social {
+    display: none;
+  }
+}
 @media (max-width: 1049px) {
   .navbar .container {
     width: auto;
