@@ -432,12 +432,15 @@ aside.party-time .sunlight-link {
   opacity: 0.9;
 }
 .ppt-homepage-widget img {
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
 .ppt-homepage-widget p {
   text-align: center;
-  font-size: 18px;
-  margin-bottom: 8px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 .impaq-me-widget {
   margin-bottom: 18px;
