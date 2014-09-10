@@ -36,7 +36,7 @@
 	                get_template_part( 'content' );
 				endwhile;
 	        } else {
-	            get_template_part( 'content', 'not-found' );
+	            echo '<h3>No Posts Yet!</h3>';
 	        }
 	    ?>
 	</div>
