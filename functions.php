@@ -36,10 +36,3 @@ function ppt_event_id_box() {
 	<?php
 	largo_register_meta_input( 'ppt_event_id' );
 }
-
-function impaqme_snippet() {
-	if (is_single()) { ?>
-		<script type="text/javascript" src="//www.impaq.me/scripts/sdk.js" async></script>
-<?	}
-}
-add_action( 'wp_footer', 'impaqme_snippet' );
