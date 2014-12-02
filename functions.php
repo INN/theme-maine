@@ -36,3 +36,10 @@ function ppt_event_id_box() {
 	<?php
 	largo_register_meta_input( 'ppt_event_id' );
 }
+
+function ppt_header() {
+	if( has_term( 'Political Party Time', 'series' ) ) {
+    	echo '<h5 class="top-tag"><a href="/series/political-party-time/">Political Party Time</a></h5>';
+	}
+}
+add_action( 'largo_before_post_header', 'ppt_header', 10 );
